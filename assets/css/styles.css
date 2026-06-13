@@ -1430,3 +1430,25 @@ html { scrollbar-color: #2a2c30 #06080B; scrollbar-width: thin; }
 
 /* homepage section spacing rhythm */
 #leadership-preview { padding-top: clamp(3.5rem, 7vw, 6rem); }
+
+
+/* Mobile founders fix + disable guilloche */
+.founder__guilloche{
+  display:none !important;
+}
+
+@media (max-width: 768px){
+  .founder{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:1.5rem !important;
+  }
+  .founder__portrait{
+    max-width:360px;
+    width:100%;
+    margin:0 auto 1rem;
+  }
+  .founder__text{
+    width:100% !important;
+  }
+}
